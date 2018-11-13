@@ -7,9 +7,10 @@ honest.causalTree <- function(formula, data, weights, treatment, subset,
 							  na.action = na.causalTree, split.Rule, split.Honest,
 							  HonestSampleSize, split.Bucket, bucketNum = 10,
 							  bucketMax = 40, cv.option, cv.Honest, minsize = 2L, model = FALSE,
-							  x = FALSE, y = TRUE, propensity, control, split.alpha = 0.5, 
-							  cv.alpha = 0.5,cv.gamma=0.5,split.gamma=0.5, cost, ...)  { 
+							  x = FALSE, y = TRUE, propensity, control, split.alpha = 0.5, cv.alpha = 0.5,cv.gamma=0.5,split.gamma=0.5, cost, ...)  { 
 
+	#check honest
+	print("honest.causalTree.R")
 	Call <- match.call()
 
 	indx <- match(c("formula", "data", "weights", "subset"),
