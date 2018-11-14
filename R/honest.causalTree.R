@@ -85,6 +85,13 @@ honest.causalTree <- function(formula, data, weights, treatment, subset,
 	est_nobs <- nrow(est_X)
 	est_nvar <- ncol(est_X)
 	
+	
+	#check X
+	print(est_nobs)
+	print(est_nvar)
+	
+	
+	
 	if (missing(est_treatment)) {
 	    stop("Note give the treatment status of honest estimation data set!\n ")
 	}
