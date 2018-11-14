@@ -2,7 +2,7 @@
 # Run down the built tree and get the final leaf ids for estimation sample
 #
 est.causalTree <- function(fit, x)
-{Rprintf("est.causalTree.R\n");
+{print("est.causalTree.R\n");
     frame <- fit$frame
     if (nrow(frame) == 1L)                # root only tree
         return(structure(rep(1, nrow(x), names = rownames(x))))
