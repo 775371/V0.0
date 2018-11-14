@@ -71,7 +71,7 @@ CTss(int n, double *y[], double *value,  double *con_mean, double *tr_mean,
 void CT(int n, double *y[], double *x, int nclass, int edge, double *improve, double *split, 
         int *csplit, double myrisk, double *wt, double *treatment, int minsize, double alpha,
         double train_to_est_ratio)
-{
+{Rprintf("CT");
     int i, j;
     double temp;
     double left_sum, right_sum;
