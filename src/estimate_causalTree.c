@@ -33,6 +33,7 @@ estimate_causalTree0(const int *dimx, int nnode,
         const double *split2, const int *csplit2, const int *usesur,
         const double *xdata2, const int *xmiss2, int *where)
 {
+        Rprintf("estimate_causalTree.c");
     int i, j;
     int n;
     int ncat;
