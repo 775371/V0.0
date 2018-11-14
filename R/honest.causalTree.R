@@ -40,6 +40,13 @@ honest.causalTree <- function(formula, data, weights, treatment, subset,
 	nvar <- ncol(X)
 	#treatment <- m$`(treatment)`
 
+	
+	print(nobs)
+	print(nvar)
+	
+	
+	
+	
 	# requirement for treatment status
 	if (missing(treatment)) {
 		stop("You should input the treatment status vector for data:
