@@ -2,7 +2,7 @@
 # honest re-estimation and change the frame of object using estimation sample
 #
 honest.est.causalTree <- function(fit, x, wt, treatment, y)
-{Rprintf("honest.est.causalTree.R\n");
+{print("honest.est.causalTree.R\n");
     frame <- fit$frame
     
     nc <- frame[, c("ncompete", "nsurrogate")]
